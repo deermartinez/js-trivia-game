@@ -41,7 +41,6 @@
       quizContainer.innerHTML = output.join('');
   }
 
-  
 
 
     //going off of the website, this is the second function needed
@@ -86,6 +85,29 @@
   
 
 
+
+  //Displaying the questions
+  const myQuestions = [
+      {
+        question: "Question 1",
+        answers: {
+          a: "",
+          b: "",
+          c: ""
+        },
+        correctAnswer: "Answer"
+      },
+      }
+    ];
+
+
+      //DIsplay the quiz right away or to ""kick them off
+  buildQuiz();
+  
+    // Third thing from the website
+   // Event listeners
+    submitButton.addEventListener('click', showResults);
+  })();
 
 
 
