@@ -1,7 +1,7 @@
 
 
 
-//first function we need from teh websitre
+//first function we need from the websitre
 (function(){
     function buildQuiz(){
       //The variable and function to store the output
