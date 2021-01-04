@@ -97,6 +97,24 @@
         },
         correctAnswer: "Answer"
       },
+      {
+        question: "Question 2",
+        answers: {
+          a: "",
+          b: "",
+          c: ""
+        },
+        correctAnswer: "Answer"
+      },
+      {
+        question: "Question 3",
+        answers: {
+          a: " ",
+          b: "",
+          c: " ",
+          d: " "
+        },
+        correctAnswer: "Answer"
       }
     ];
 
