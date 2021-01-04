@@ -28,7 +28,17 @@
               </label>`
             );
           }
-
+  
+          // Add this question and its answers to the output
+          output.push(
+            `<div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join('')} </div>`
+          );
+        }
+      );
+  
+      // Combine our output list into one string of HTML and put it on the page
+      quizContainer.innerHTML = output.join('');
   }
 
 
