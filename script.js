@@ -41,6 +41,52 @@
       quizContainer.innerHTML = output.join('');
   }
 
+  
+
+
+    //going off of the website, this is the second function needed
+    function showResults(){
+  
+      // Gather answer containers from our quiz
+      const answerContainers = quizContainer.querySelectorAll('.answers');
+  
+      // Keep track of user's answers
+      let numCorrect = 0;
+  
+      // For each question
+      myQuestions.forEach( (currentQuestion, questionNumber) => {
+  
+        // Find selected answer
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+  
+        // If answer is correct
+        if(userAnswer === currentQuestion.correctAnswer){
+          // Add to the number of correct answers
+          numCorrect++;
+  
+          // Colors the answers green
+          answerContainers[questionNumber].style.color = 'lightgreen';
+        }
+        // If answer is wrong or blank
+        else{
+          // Color the answers red
+          answerContainers[questionNumber].style.color = 'red';
+        }
+      });
+  
+      // Show number of correct answers out of total
+      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+  
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+  
+
+
+
 
 
 // var sibling = {
