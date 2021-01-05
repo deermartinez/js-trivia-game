@@ -160,32 +160,32 @@
   //Displaying the questions
   const myQuestions = [
       {
-        question: "Question 1",
+        question: "What was the first feature-length animated movie ever released?",
         answers: {
-          a: "",
-          b: "",
-          c: ""
+          a: "Snow White and the seven dwarves" ,
+          b: "Cinderella" ,
+          c: "Fantasia" 
         },
-        correctAnswer: "Answer"
+        correctAnswer: "Snow White and the seven dwarves"
       },
       {
-        question: "Question 2",
+        question: "Jennifer Lawrence won a Best Actress Academy Award for what movie?",
         answers: {
-          a: "",
-          b: "",
-          c: ""
+          a: "The Hunger Games" ,
+          b: "Silver Linings Playbook",
+          c: "Red Sparrow"
         },
-        correctAnswer: "Answer"
+        correctAnswer: "Silver Linings Playbook"
       },
       {
-        question: "Question 3",
+        question: "What is the real name of Uma Thurman’s “The Bride” character from Kill Bill?",
         answers: {
-          a: " ",
-          b: "",
-          c: " ",
-          d: " "
+          a: "Beatrix Kiddo" ,
+          b: "Elle Driver" ,
+          c: "O-Ren Ishii" ,
+          d: "Vernita Green" 
         },
-        correctAnswer: "Answer"
+        correctAnswer: "Beatrix Kiddo"
       }
     ];
 
